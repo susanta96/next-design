@@ -1,3 +1,4 @@
+
 export default { 
     header: {
         display: 'flex',
@@ -127,7 +128,7 @@ export default {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'flex-start',
-        margin: '4rem',
+        margin: '10rem 4rem',
     },
     contentEdu: {
         display: 'flex',
@@ -251,13 +252,41 @@ export default {
         backgroundColor: '#2E2B3F',
         width: '100%',
         height: '80vh',
-        padding: '10rem'
+        padding: '8rem'
     },
     contentPub: {
         display: 'flex',
-        justifyContent: 'space-around',
-        alignItems: 'center'
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        width: '28rem',
+        color: '#fff',
+    },
+    detail: {
+        width: 'inherit',
+        color: 'inherit',
+        fontSize: '1.2rem',
+        fontWeight: 'bold',
+        lineHeight: '2rem',
+        paddingTop: '3rem'
+    },
+    CardStyle: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+    },
+    CardBox: {
+        
+        width: '26rem',
+        margin: '1rem 0',
+        backgroundColor: '#fff',
+        color: '#777',
+        height: '30rem',
+        padding: '2rem 1rem'
 
+        
     }
+
 
 };

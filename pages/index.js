@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from '../components/head'
 import Link from 'next/link'
-import {Grid, withStyles, Card, CardContent, CardMedia} from '@material-ui/core'
+import {Grid} from '@material-ui/core'
 import {ArrowForward} from '@material-ui/icons'
 import Layout from '../components/_Layout/LayoutMain'
 import Nav from '../components/nav'
@@ -101,10 +101,29 @@ const Home = () => (
 
 
     <section style={indexStyles.publicationSection}>
-      <Grid container spacing={24}>
+      <Grid container spacing={0}>
         <Grid item md={3} lg={3} style={indexStyles.contentPub} >
+          
           <p style={indexStyles.heading}>Trusted Publications</p>
-          <p style={indexStyles.para}>Etiam porta sem malesuada magna mollis euismod.Interger posuere erat a ante venenatis dapibus posuere</p>
+          <p style={indexStyles.detail}>Etiam porta sem malesuada magna mollis euismod.Interger posuere erat a ante venenatis dapibus posuere</p>
+        </Grid>
+        <Grid item md={3} lg={3} style={indexStyles.CardStyle} >
+          <div style={indexStyles.CardBox}>
+            <img src={"./../static/images/bbc.png"} alt="BBC icon" style={{height: '140px',width: '120px'}}/>
+            <p style={indexStyles.detail}>Etiam porta sem malesuada magna mollis euismod.Interger posuere erat a ante venenatis dapibus posuere</p>
+          </div>
+        </Grid>
+        <Grid item md={3} lg={3} style={indexStyles.CardStyle}  >
+        <div style={indexStyles.CardBox}>
+          <img src={"./../static/images/CNN.png"} alt="CNN icon" style={{height: '140px',width: '120px'}}/>
+          <p style={indexStyles.detail}>Etiam porta sem malesuada magna mollis euismod.Interger posuere erat a ante venenatis dapibus posuere</p>
+        </div>
+        </Grid>
+        <Grid item md={3} lg={3} style={indexStyles.CardStyle} >
+          <div style={indexStyles.CardBox}>
+            <img src={"./../static/images/bloomberg.png"} alt="Bloomberg icon" style={{height: '140px',width: '120px'}}/>
+            <p style={indexStyles.detail}>Etiam porta sem malesuada magna mollis euismod.Interger posuere erat a ante venenatis dapibus posuere</p>
+          </div>
         </Grid>
       </Grid>
     </section>

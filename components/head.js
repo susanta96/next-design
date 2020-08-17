@@ -15,13 +15,13 @@ const Head = props => (
       content={props.description || defaultDescription}
     />
     <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
-    <link rel="icon" sizes="192x192" href="/static/logo.png" />
-    <link rel="apple-touch-icon" href="/static/logo.png" />
+    <link rel="icon" sizes="192x192" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
     {/* <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
     <link rel="icon" href="/static/favicon.ico" /> */}
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"></link>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
-   <link href="../static/css/global.css" rel="stylesheet"></link>
+   <link href="/css/global.css" rel="stylesheet"></link>
     <meta property="og:url" content={props.url || defaultOGURL} />
     <meta property="og:title" content={props.title || ''} />
     <meta

@@ -30,3 +30,7 @@ Primary style
   Main Components 
   
   -------------------------------- */
+
+  .overflow-hidden {
+    overflow-x: hidden;
+  }

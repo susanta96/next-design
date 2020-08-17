@@ -1,14 +1,11 @@
 
 import React from 'react';
-// import {CssBaseline} from '@material-ui/core'
 
 
 
 const MainLayout = (props) => (
-    <div >
-        {/* <CssBaseline/> */}
+    <div className='overflow-hidden'>
         {props.children}
-        
     </div>
 )
 

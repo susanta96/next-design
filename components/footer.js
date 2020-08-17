@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Styles from '../static/Styles/footerStyle'
+import Styles from '../public/Styles/footerStyle';
 import { Grid } from '@material-ui/core'
 
 const footer = () => (

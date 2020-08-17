@@ -1,21 +1,20 @@
 import React from 'react'
 import Head from '../components/head'
-import Link from 'next/link'
 import {Grid} from '@material-ui/core'
 import {ArrowForward} from '@material-ui/icons'
 import Layout from '../components/_Layout/LayoutMain'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
-import indexStyles from '../static/Styles/indexStyle'
+import indexStyles from '../public/Styles/indexStyle'
 
 
 
 const Home = () => (
   <Layout>
     <Head title="Landing Page" />
-    <Grid container spacing={8} style={indexStyles.header}>
+    <Grid container spacing={2} style={indexStyles.header}>
       <Grid item xs={11} lg={11} style={indexStyles.container}>
-          <div style={indexStyles.logo}><img src="../static/images/logo.png" alt="Logo" height="75px"/></div>
+          <div style={indexStyles.logo}><img src="/images/logo.png" alt="Logo" height="75px"/></div>
           <h2 style={indexStyles.logoText}>Visionary</h2>
           < Nav /> 
 
@@ -32,7 +31,7 @@ const Home = () => (
           </div>
         </Grid>
         <Grid item xs={4} md={8} lg={8} style={indexStyles.imgStarted}>
-          <img src={"./../static/images/1st.png"} alt="started"/>
+          <img src={"/images/1st.png"} alt="started"/>
         </Grid>
       </Grid>
     </section>
@@ -42,7 +41,7 @@ const Home = () => (
       <p style={indexStyles.Secondaryheading}>VisionarySchoolmen's machine learning models will evaluate your educational materials</p>
       <Grid container spacing={0}>
         <Grid item xs={4} md={7} lg={7} style={indexStyles.imageWrap}>
-            <img src={"./../static/images/2nd.png"} alt="Material" />
+            <img src={"/images/2nd.png"} alt="Material" />
         </Grid>
         <Grid item xs={2} md={5} lg={5} style={indexStyles.contentMaterial}>
             <div style={indexStyles.firstMaterialBox}>
@@ -68,7 +67,7 @@ const Home = () => (
     <section style={indexStyles.personalisedSection}>
       <Grid container spacing={8}>
         <Grid item xs={3} md={6} lg={6} style={indexStyles.imageWrap}>
-            <img src={"./../static/images/3rd.png"} alt="Personalised"/>
+            <img src={"/images/3rd.png"} alt="Personalised"/>
         </Grid>
         <Grid item xs={3} md={6} lg={6} style={indexStyles.contentPersonalise} >
             <p style={indexStyles.heading}>Personalised Learning</p>
@@ -85,7 +84,7 @@ const Home = () => (
     <section style={indexStyles.engageSection}>
       <Grid container spacing={8}>
         <Grid item xs={3} md={6} lg={6} style={indexStyles.imageWrap}>
-            <img src={"./../static/images/4th.png"} alt="engageSection"/>
+            <img src={"/images/4th.png"} alt="engageSection"/>
         </Grid>
         <Grid item xs={3} md={6} lg={6} style={indexStyles.contentEngage} >
             <p style={indexStyles.heading}>Student Engagement</p>
@@ -109,19 +108,19 @@ const Home = () => (
         </Grid>
         <Grid item md={3} lg={3} style={indexStyles.CardStyle} >
           <div style={indexStyles.CardBox}>
-            <img src={"./../static/images/bbc.png"} alt="BBC icon" style={{height: '140px',width: '120px'}}/>
+            <img src={"/images/bbc.png"} alt="BBC icon" style={{height: '140px',width: '120px'}}/>
             <p style={indexStyles.detail}>Etiam porta sem malesuada magna mollis euismod.Interger posuere erat a ante venenatis dapibus posuere</p>
           </div>
         </Grid>
         <Grid item md={3} lg={3} style={indexStyles.CardStyle}  >
         <div style={indexStyles.CardBox}>
-          <img src={"./../static/images/CNN.png"} alt="CNN icon" style={{height: '140px',width: '120px'}}/>
+          <img src={"/images/CNN.png"} alt="CNN icon" style={{height: '140px',width: '120px'}}/>
           <p style={indexStyles.detail}>Etiam porta sem malesuada magna mollis euismod.Interger posuere erat a ante venenatis dapibus posuere</p>
         </div>
         </Grid>
         <Grid item md={3} lg={3} style={indexStyles.CardStyle} >
           <div style={indexStyles.CardBox}>
-            <img src={"./../static/images/bloomberg.png"} alt="Bloomberg icon" style={{height: '140px',width: '120px'}}/>
+            <img src={"/images/bloomberg.png"} alt="Bloomberg icon" style={{height: '140px',width: '120px'}}/>
             <p style={indexStyles.detail}>Etiam porta sem malesuada magna mollis euismod.Interger posuere erat a ante venenatis dapibus posuere</p>
           </div>
         </Grid>
@@ -131,7 +130,7 @@ const Home = () => (
     <section style={indexStyles.educatorSection}>
       <Grid container spacing={16} >
         <Grid item xs={3} md={6} lg={6} style={indexStyles.imageWrap}>
-            <img src={"./../static/images/5th.png"} alt="artificial"/>
+            <img src={"/images/5th.png"} alt="artificial"/>
         </Grid>
         <Grid item xs={3} md={6} lg={6} style={indexStyles.contentEdu} >
             <p style={indexStyles.headingEdu}>Advanced Educators Learning Systems</p>
@@ -157,7 +156,7 @@ const Home = () => (
         </Grid>
 
         <Grid item xs={3} md={6} lg={6} style={indexStyles.imageWrap} >
-            <img src={"./../static/images/6th.png"} alt="artificial"/>
+            <img src={"/images/6th.png"} alt="artificial"/>
         </Grid>
       </Grid>
     </section>
